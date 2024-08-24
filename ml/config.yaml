@@ -1,0 +1,12 @@
+
+SOURCE_BUCKET: 'bucket-mlops-project'
+MLFLOW_URL: 'http://89.169.148.33:8000'
+S3_KEY_ID : 'YCAJERcdEYXXGtibDA_bKmuCN'
+S3_SECRET_KEY: 'YCOhTcO5kxCoBY950-36WcWo6uzy8tBJ4S1gxEsP'
+MODEL_NAME: 'sentiment_analysis.model'
+EXPIRIMENT_NAME: 'sentiment_analysis2'
+MLFLOW_S3_ENDPOINT_URL: "https://storage.yandexcloud.net"
+FILE_NAME_FOR_REFFIT: "retraining_data.csv"
+FILE_NAME_FOR_TRAIN: "train_data.csv"
+FILE_NAME_FOR_HOLDOUT: "ab_test_data.csv"
+
