@@ -1,2 +1,2 @@
-# sentiment_analysis_of_reviews
+# Sentiment analysis of reviews
 Repo for final project in MLOps course
