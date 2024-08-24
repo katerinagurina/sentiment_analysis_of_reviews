@@ -1,0 +1,34 @@
+git:
+  dags:
+    enabled: true
+    repositories:
+    - repository: "https://github.com/katerinagurina/sentiment_analysis_of_reviews.git"
+      branch: "develop"
+      name: ""
+      path: "dags"
+
+worker:
+  automountServiceAccountToken: true
+  containerSecurityContext:
+    enabled: false
+  podSecurityContext:
+    enabled: false
+
+
+scheduler:
+  automountServiceAccountToken: true
+  containerSecurityContext:
+    enabled: false
+  podSecurityContext:
+    enabled: false
+
+web:
+  automountServiceAccountToken: true
+  containerSecurityContext:
+    enabled: false
+  podSecurityContext:
+    enabled: false
+
+
+rbac:
+  create: true

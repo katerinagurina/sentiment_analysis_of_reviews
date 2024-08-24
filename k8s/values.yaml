@@ -1,0 +1,30 @@
+# Default values for hello-world.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+deployment:
+  replicaCount: 3
+  evisionHistoryLimit: 5
+  maxSurge: 1
+  maxUnavailable: 2
+  image: katerinagurina/sentiment_analysis_project:latest
+  port: 80
+  imagePullPolicy: Always
+  readinessProbe:
+    path: healthcheck
+    initialDelaySeconds: 1  
+    periodSeconds: 10
+    failureThreshold: 2
+  livenessProbe:
+    path: healthcheck     
+    initialDelaySeconds: 1
+    failureThreshold: 2
+    periodSeconds: 10
+
+service:
+  port: 80
+  targetPort: 80
+
+ingress:
+  host: test.ai
+
