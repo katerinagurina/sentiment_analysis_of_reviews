@@ -16,16 +16,4 @@ nodes:
   - containerPort: 443
     hostPort: 443
     protocol: TCP
-  - containerPort: 30950
-    hostPort: 30950
-    protocol: TCP
 - role: worker
-  extraPortMappings:
-  - containerPort: 30950
-    hostPort: 30951
-    protocol: TCP
-- role: worker
-  extraPortMappings:
-  - containerPort: 30950
-    hostPort: 30952
-    protocol: TCP

@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 deployment:
-  replicaCount: 3
+  replicaCount: 2
   evisionHistoryLimit: 5
   maxSurge: 1
   maxUnavailable: 2
@@ -24,6 +24,9 @@ deployment:
 service:
   port: 80
   targetPort: 80
+  type: ClusterIP
+  portName: ml-app
+  protocol: TCP
 
 ingress:
   host: test.ai

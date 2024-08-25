@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: {{ .Release.Name }}-svc
   labels:
-    app: {{ .Release.Name }}
+    app: {{.Release.Name }}
 spec:
   selector:
-    app: {{ .Release.Name }}
+    app: {{.Release.Name }}
   type: {{ .Values.service.type }}
   ports:
     - protocol: {{ .Values.service.protocol | default "TCP" }}

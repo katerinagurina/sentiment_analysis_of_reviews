@@ -1,3 +1,5 @@
+apache-airflow==2.10.0
+apache-airflow-providers-cncf-kubernetes==8.4.0
 boto3==1.35.4
 fastapi==0.112.1
 httpx==0.27.0

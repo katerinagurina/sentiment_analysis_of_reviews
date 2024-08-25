@@ -1,0 +1,7 @@
+
+SOURCE_BUCKET: 'bucket-mlops-project'
+S3_KEY_ID : 'YCAJERcdEYXXGtibDA_bKmuCN'
+S3_SECRET_KEY: 'YCOhTcO5kxCoBY950-36WcWo6uzy8tBJ4S1gxEsP'
+FILE_NAME_FOR_TEST: "test_data.csv"
+MLFLOW_S3_ENDPOINT_URL: "https://storage.yandexcloud.net"
+
