@@ -3,7 +3,7 @@ git:
     enabled: true
     repositories:
     - repository: "https://github.com/katerinagurina/sentiment_analysis_of_reviews.git"
-      branch: "develop"
+      branch: "main"
       name: ""
       path: "dags"
 

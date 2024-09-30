@@ -13,7 +13,7 @@ aws_secret_access_key = Secret('env', 'AWS_SECRET_ACCESS_KEY', 'ya-s3-secret', '
 
 with DAG(dag_id="reffit_dag",
          start_date=days_ago(2),
-         schedule="@daily",
+         schedule="*/5 * * * *",
          catchup=False) as dag:
   
   filekey = str(uuid.uuid4())
